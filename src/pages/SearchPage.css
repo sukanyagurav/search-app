@@ -1,0 +1,153 @@
+.searchPage__logo{
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.searchPage__header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index:100;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+ 
+}
+.searchPage__headerBody > .search > .search__input{
+    margin-top: 0;
+    width: unset;
+    margin:unset;
+    max-width: unset;
+    
+}
+@media (max-width:600px) {
+    
+    .searchPage__header{
+        padding: 30px 15px;
+    }
+    
+}
+.searchPage__headerBody{
+    max-width: 600px;
+    width: 100%;
+}
+.searchPage__options{
+    display: flex;
+    align-items:center;
+    color: grey;
+    width: 100%;
+}
+.searchPage__optionsRight ,
+.searchPage__optionsLeft {
+    display: flex;
+}
+.searchPage__optionsRight a,
+.searchPage__optionsLeft a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.searchPage__optionsRight {
+    margin-left: 80px;
+}
+
+.searchPage__option{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.searchPage__option a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+}
+.searchPage__result{
+    margin:40px 0;
+}
+.searchPage__resultCount{
+    color: #70757a;
+    font-size: 14px;
+    padding: 1rem;
+}
+.searchPage__results a{
+    /* color: rgb(79, 79, 196); */
+    color: rgb(71, 69, 69);
+}
+.searchPage__results .title:hover{
+    border-bottom: 1px solid black;
+    color: rgb(79, 79, 196);
+}
+.searchPage__results{
+    max-width: 700px;
+    width: 100%;
+    margin-top: 20px;
+    /* margin-inline: auto; */
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+.searchPage__result{
+    padding: 1rem;
+}
+@media(max-width:950px){
+    .searchPage__results{
+        margin-left: 0;
+    }
+}
+.searchPage__resultsTitle{
+    text-decoration: none;
+}
+.searchPage__resultsTitle:hover{
+    text-decoration: underline;
+}
+.searchPage__resultsTitle > h2 {
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+.searchPage__resultSnippet{
+    margin-top: 10px;
+    text-decoration: none !important;
+}
+.searchPage__result a:first-child{
+    display: flex;
+    align-items: center;
+}
+.searchPage__resultImage{
+   object-fit: contain;
+   height: 20px;
+   width: 20px;
+   margin-right: 10px;
+}
+.searchPage__Image{
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.image__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.image__container h2{
+    font-size: 1.2rem;
+}
+.video__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.video__container > a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.errorMessage{
+    margin-top: 5rem;
+    font-size: 3rem;
+}
